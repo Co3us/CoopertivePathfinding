@@ -266,25 +266,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a8be0009224dff41bff4a16ea058e8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dirs:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  steeringAway: 0
-  agent: {fileID: 0}
-  agentProps: {fileID: 0}
-  followPathScript: {fileID: 0}
-  findPathStaticScript: {fileID: 0}
-  timeSteering: 0
-  possibleDirs: []
-  steerDir: {x: 0, y: 0, z: 0}
 --- !u!135 &140681396
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -310,10 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674c47cc44927cf4f9a0bc1ae3d05c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
   visibleObstManagerScript: {fileID: 737884729}
-  sphereCollider: {fileID: 0}
   agentPropsScript: {fileID: 737884731}
 --- !u!1 &367130556
 GameObject:
@@ -495,28 +473,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587246af6a899174f8e3171f4af8f3d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
   agentPropsScript: {fileID: 2085844895}
   findPathScript: {fileID: 2085844896}
   followPathScript: {fileID: 2085844892}
-  managerScript: {fileID: 0}
-  pathBounds: {fileID: 0}
-  visObstManagerScript: {fileID: 0}
   levelTxt: {fileID: 4900000, guid: 70d1ab4b8615d884e870fa8798e61f7c, type: 3}
   unwalkableMask:
+    serializedVersion: 2
     m_Bits: 512
   gridWorldSize: {x: 12, y: 12}
   nodeRadius: 0.5
-  <GridSizeX>k__BackingField: 0
-  <GridSizeY>k__BackingField: 0
-  <GridSizeZ>k__BackingField: 0
-  lines: []
-  nodeDiameter: 0
-  timeFrameOffset: 0
-  worldBottomLeft: {x: 0, y: 0, z: 0}
-  pathCrossesAgentPath: 0
-  maxSize: 0
 --- !u!4 &644158621
 Transform:
   m_ObjectHideFlags: 0
@@ -565,17 +530,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674ebf3810704424da1622b49148712c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
   Obstacles: []
-  findPathScript: {fileID: 0}
-  isInitalSearch: 1
-  heighestIndex: 0
   gridScript: {fileID: 644158620}
   managerScipt: {fileID: 1255710963}
-  recalculatedObstCounter: 0
-  numOfObstacles: 0
-  shouldReturnSignal: 0
 --- !u!114 &737884730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -588,17 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 499ff2c2aa4ee3c489f4126a7cb3f28e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gridScript: {fileID: 0}
-  prevTime: 0
   target: {fileID: 1439481734}
-  agent: {fileID: 0}
-  agentPropsScript: {fileID: 0}
-  followPathScript: {fileID: 0}
-  spatialAStarScript: {fileID: 0}
-  visibleObstManagerScript: {fileID: 0}
-  managerScript: {fileID: 0}
 --- !u!114 &737884731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,8 +556,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fce7cb6397836ad4a91548a3558d8adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
@@ -628,15 +573,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec0162c1079de54e87084d1c82750c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followPathScript: {fileID: 0}
-  spatialAStarScript: {fileID: 0}
-  agentPropsScript: {fileID: 0}
-  managerScript: {fileID: 0}
-  gridScript: {fileID: 0}
-  windowLenght: 0
-  prevMinHCost: 2147483647
 --- !u!114 &737884733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,16 +585,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fc8903c1e747d7448dd5f749b6a0029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gridScript: {fileID: 0}
-  followPathScript: {fileID: 0}
-  speed: 2
-  searchPath: 1
-  pathIndex: 0
-  startPos: {x: 0, y: 0, z: 0}
-  targetPos: {x: 0, y: 0, z: 0}
-  managerScript: {fileID: 0}
 --- !u!114 &737884734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,29 +597,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6aa0089eba0d7a42acc1daa0a35ad01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
-  targetIndex: 0
-  waitTime: 1
-  prevTime: 0
   agentIndexInlist: 1
-  <PathIndex>k__BackingField: 0
-  <IsLastCycle>k__BackingField: 0
-  <isWaiting>k__BackingField: 0
-  newPathPrimed: 0
-  gridScript: {fileID: 0}
-  timeSinceNewPathSelected: 0
-  timeSinceNewNodeSelected: 0
-  pathHalfPointIndex: 0
-  findPathScript: {fileID: 0}
   isLocked: 0
-  shouldGetNewPathChunk: 0
-  minChainLen: 0
-  prevPos: {x: 0, y: 0, z: 0}
-  managerScript: {fileID: 0}
   target: {fileID: 1439481734}
-  lastFrame: 0
 --- !u!4 &737884735
 Transform:
   m_ObjectHideFlags: 0
@@ -851,21 +757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ef6aa401e2ff7a4ab98988bab6ffa34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
   targetPoint: {x: -5, y: 0.67, z: -1.5}
-  returnPoint: {x: 0, y: 0, z: 0}
   currentTarget: {x: 0, y: 0, z: 0}
-  speed: 2
-  rotSpeed: 2
-  nodeDiameter: 0.5
-  velocity: {x: 0, y: 0, z: 0}
-  T: 30
-  samplingFreq: 3
-  frameCount: 0
-  pointInFuture: {x: 0, y: 0, z: 0}
-  obstManagerScript: {fileID: 0}
-  changeRot: 0
   isBackAndForth: 0
 --- !u!114 &1030874493
 MonoBehaviour:
@@ -879,36 +772,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150685db9721e1c4f8f5df78aba254d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentPropsScript: {fileID: 0}
-  boxCollider: {fileID: 0}
-  managerScript: {fileID: 0}
-  getCoveredNodesScript: {fileID: 0}
-  obstManagerScript: {fileID: 0}
-  followPathScript: {fileID: 0}
-  gridScript: {fileID: 0}
-  lastNPoints: []
-  velocity: {x: 0, y: 0, z: 0}
-  pointInFuturePredicted: {x: 0, y: 0, z: 0}
-  predictAheadTimeFrames: 2
-  prevTime: 0
-  T: 0
-  samplingFreq: 3
-  frameCount: 0
-  numberOfPastPoints: 5
-  prevPredictedPathVec: {x: 0, y: 0, z: 0}
-  startPoint: {x: 0, y: 0, z: 0}
-  prevBoundsExtends: {x: 0, y: 0, z: 0}
-  isFirstIteration: 1
-  prevSpeed: 0
-  standingStillPoint: {x: 0, y: 0, z: 0}
-  standingInPlaceTime: 0
-  isInPlace: 0
-  speed: 0
-  timeFrequency: 0
-  isActive: 0
-  isLocked: 0
 --- !u!114 &1030874494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,28 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40e6f58451807404081001e29e8bce2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
   predictedPathBox: {fileID: 2015889382}
-  followPathScript: {fileID: 0}
-  gridScript: {fileID: 0}
-  managerScript: {fileID: 0}
-  predictedPathBoxCollider: {fileID: 0}
-  pathBounds: {fileID: 0}
-  obstManagerScript: {fileID: 0}
-  predictAheadTimeFrames: 0
-  updateFrameCounter: 0
-  moveBoxAlongPath: 0
-  amountOfTimeToMoveForward: 0
-  getBoxesInOnePlace: 0
-  isFirst: 0
-  timeFrameCounter: 0
-  speed: 0
-  indexObstList: 0
-  predictedPoint: {x: 0, y: 0, z: 0}
-  prevTime: 0
-  isLocked: 0
-  predictedPathBoxXScale: 0
 --- !u!114 &1030874495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,17 +797,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c0b015cecd2c0d4b9ebf91de13634b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  predictPathScript: {fileID: 0}
-  getCoveredNodesScript: {fileID: 0}
-  boxCollider: {fileID: 0}
-  managerScript: {fileID: 0}
-  gridScript: {fileID: 0}
   speed: 0.5
   isStandingStill: 0
-  index: -1
-  isActive: 0
 --- !u!65 &1030874496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1174,23 +1007,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc79a8e592fb850499e20e40da8801bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
   agents:
   - {fileID: 2085844887}
   - {fileID: 737884728}
-  isLocalAvoidance: 1
+  isLocalAvoidance: 0
   agentSpeed: 1
   timeResolution: 1
-  simEnded: 0
-  time: 0
-  spatialNodesVisited: 0
-  spaceTimeNodesVisited: 0
-  spatialCallCounter: 0
-  spaceTimeCallCounter: 0
-  activeAgent: {fileID: 0}
-  frameCount: 0
-  nodeCountsPerFrame: 
 --- !u!1 &1439481729
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,10 +1150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674c47cc44927cf4f9a0bc1ae3d05c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
   visibleObstManagerScript: {fileID: 2085844888}
-  sphereCollider: {fileID: 0}
   agentPropsScript: {fileID: 2085844895}
 --- !u!135 &1817203349
 SphereCollider:
@@ -1440,17 +1259,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 674ebf3810704424da1622b49148712c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
   Obstacles: []
-  findPathScript: {fileID: 0}
-  isInitalSearch: 1
-  heighestIndex: 0
   gridScript: {fileID: 644158620}
   managerScipt: {fileID: 1255710963}
-  recalculatedObstCounter: 0
-  numOfObstacles: 0
-  shouldReturnSignal: 0
 --- !u!4 &2085844891
 Transform:
   m_ObjectHideFlags: 0
@@ -1479,29 +1290,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6aa0089eba0d7a42acc1daa0a35ad01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
-  targetIndex: 0
-  waitTime: 1
-  prevTime: 0
   agentIndexInlist: 1
-  <PathIndex>k__BackingField: 0
-  <IsLastCycle>k__BackingField: 0
-  <isWaiting>k__BackingField: 0
-  newPathPrimed: 0
-  gridScript: {fileID: 0}
-  timeSinceNewPathSelected: 0
-  timeSinceNewNodeSelected: 0
-  pathHalfPointIndex: 0
-  findPathScript: {fileID: 0}
   isLocked: 0
-  shouldGetNewPathChunk: 0
-  minChainLen: 0
-  prevPos: {x: 0, y: 0, z: 0}
-  managerScript: {fileID: 0}
   target: {fileID: 1439481734}
-  lastFrame: 0
 --- !u!114 &2085844893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1514,16 +1305,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fc8903c1e747d7448dd5f749b6a0029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gridScript: {fileID: 0}
-  followPathScript: {fileID: 0}
-  speed: 2
-  searchPath: 1
-  pathIndex: 0
-  startPos: {x: 0, y: 0, z: 0}
-  targetPos: {x: 0, y: 0, z: 0}
-  managerScript: {fileID: 0}
 --- !u!114 &2085844894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1536,15 +1317,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eec0162c1079de54e87084d1c82750c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followPathScript: {fileID: 0}
-  spatialAStarScript: {fileID: 0}
-  agentPropsScript: {fileID: 0}
-  managerScript: {fileID: 0}
-  gridScript: {fileID: 0}
-  windowLenght: 0
-  prevMinHCost: 2147483647
 --- !u!114 &2085844895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1555,8 +1327,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fce7cb6397836ad4a91548a3558d8adc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
@@ -1574,17 +1344,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e5f3b3192278341968d4f17695cba8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
   target: {fileID: 1439481734}
-  agent: {fileID: 0}
-  gridScript: {fileID: 0}
-  spaceTimeAStarScript: {fileID: 0}
-  visibleObstManager: {fileID: 0}
-  spatialAStarScript: {fileID: 0}
-  followPathScript: {fileID: 0}
-  managerScript: {fileID: 0}
-  prevTime: 0
-  initComplete: 0
-  recalculateTime: 0
-  prevPathCurrentInd: 0
